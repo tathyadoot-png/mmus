@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Gotu&family=Playpen+Sans+Deva:wght@100..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== POLITICAL COLOR SYSTEM ===== */
+@layer base {
+  :root {
+    /* Branding Colors */
+    --color-primary: #E46B2E;      /* Kesariya (Saffron) */
+    --color-secondary: #112250;    /* Governance Blue */
+    --color-green: #159172;        /* Vikas Green */
+
+    /* Typography */
+    --color-text: #112250;         /* Primary text blue hi rakha hai readability ke liye */
+    --color-text-muted: #4B5563;
+
+    /* Backgrounds (Updated to Off-White) */
+    --color-bg: #FDFCFB;           /* Premium Warm Off-White */
+    --color-bg-soft: #F3F4F6;      /* Slightly darker for sections */
+    --color-border: #E5E7EB;
+  }
+
+  /* 🔹 Default body content font */
+  body {
+    @apply bg-bg text-text antialiased;
+    font-family: 'Poppins';
+  }
+
+  /* 🔹 All headings = Gotu */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Gotu';
+    letter-spacing: 0.01em;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer components {
+
+  /* 🔶 Kesariya CTA */
+  .btn-saffron {
+    @apply bg-primary text-white px-6 py-2 rounded-md
+           font-semibold tracking-wide
+           hover:brightness-110 active:scale-95
+           transition-all shadow-soft;
+  }
+
+  /* 🔷 Governance Blue */
+  .btn-blue {
+    @apply bg-secondary text-white px-6 py-2 rounded-md
+           font-semibold
+           hover:brightness-110 active:scale-95
+           transition-all shadow-soft;
+  }
+
+  /* 🟢 Vikas Green */
+  .btn-green {
+    @apply bg-green text-white px-6 py-2 rounded-md
+           font-semibold
+           hover:brightness-110 active:scale-95
+           transition-all shadow-soft;
+  }
+
+  /* 🟢 Outline Green (Optional) */
+  .btn-green-outline {
+    @apply border border-green text-green bg-transparent
+           px-6 py-2 rounded-md font-semibold
+           hover:bg-green hover:text-white
+           transition-all;
+  }
+}
