@@ -1,5 +1,5 @@
 import { ArrowUpRight, Heart, MapPin, Mail, Phone, Calendar } from "lucide-react";
-import logo2 from "@/assets/logoDark.png"; // आपकी एजेंसी का लोगो
+import logo2 from "@/assets/SociyoLogo.png"; // आपकी एजेंसी का लोगो
 import type { Lang } from "@/layouts/MainLayout";
 
 const Footer = ({ lang }: { lang: Lang }) => {
