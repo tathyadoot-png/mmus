@@ -120,8 +120,8 @@ const ContactSection = () => {
                 ))}
               </div>
 
-              <a href="mailto:mahanagarmela@gmail.com" className="flex items-center gap-2 text-sm font-bold text-slate-400 hover:text-slate-900 transition-colors">
-                <Mail size={16} /> mahanagarmela@gmail.com
+              <a href="mailto:mmusbhopal@gmail.com" className="flex items-center gap-2 text-sm font-bold text-slate-400 hover:text-slate-900 transition-colors">
+                <Mail size={16} /> mmusbhopal@gmail.com
               </a>
             </div>
           </motion.div>
