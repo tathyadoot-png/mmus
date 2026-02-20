@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { Send, Instagram, Facebook, Twitter, Mail, Sparkles, MapPin, Calendar, Heart, ArrowRight } from "lucide-react";
+import { Send, Instagram, Facebook, Youtube, Mail, Sparkles, MapPin, Calendar, Heart, ArrowRight } from "lucide-react";
+import { FaWhatsapp, FaXTwitter } from "react-icons/fa6";
 import { useOutletContext } from "react-router-dom";
 import type { Lang } from "@/layouts/MainLayout";
 import SectionHeading from "@/components/ui/SectionHeading/SectionHeading";
@@ -13,6 +14,13 @@ const ContactSection = () => {
     subtitle: isHi ? "जुड़ें हमारे साथ" : "Get In Touch",
   };
 
+  const socials = [
+    { icon: Facebook, href: "https://www.facebook.com/mahanagarmela", color: "hover:bg-[#1877F2]" },
+    { icon: Instagram, href: "https://www.instagram.com/mahanagarmela", color: "hover:bg-[#E4405F]" },
+    { icon: FaXTwitter, href: "https://x.com/mahanagarmela", color: "hover:bg-black" },
+    { icon: Youtube, href: "https://youtube.com/@mahanagarmela", color: "hover:bg-[#FF0000]" },
+  ];
+
   return (
     <section id="contact" className="py-24 bg-[#fcfcfd] relative overflow-hidden">
       {/* Background Subtle Elements */}
@@ -23,29 +31,29 @@ const ContactSection = () => {
         <SectionHeading subtitle={labels.subtitle} title={labels.title} />
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mt-10">
-          
+
           {/* LEFT: THE INVITATION MESSAGE */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             className="lg:col-span-5 flex flex-col justify-between p-10 md:p-14 bg-slate-900 rounded-[3rem] text-white shadow-2xl relative overflow-hidden"
           >
             {/* Ambient Light */}
             <div className="absolute -top-20 -right-20 w-64 h-64 bg-primary/20 blur-[100px] rounded-full" />
-            
+
             <div className="relative z-10">
               <div className="flex items-center gap-2 text-primary mb-6">
                 <Heart size={20} fill="currentColor" />
                 <span className="text-xs font-black uppercase tracking-[0.3em]">{isHi ? "सप्रेम भेंट" : "Hearty Welcome"}</span>
               </div>
-              
+
               <h3 className="text-4xl md:text-5xl font-[Gotu] font-bold leading-tight mb-8">
                 {isHi ? "सांस्कृतिक उत्सव का हिस्सा बनें" : "Be Part of the Culture"}
               </h3>
-              
+
               <p className="text-white/60 text-lg leading-relaxed italic border-l-2 border-primary/30 pl-6">
-                {isHi 
-                  ? "आइए, इस सांस्कृतिक उत्सव का हिस्सा बनें और परिवार सहित आनंद, आस्था और मनोरंजन से भरपूर इस मेले में सहभागिता करें।" 
+                {isHi
+                  ? "आइए, इस सांस्कृतिक उत्सव का हिस्सा बनें और परिवार सहित आनंद, आस्था और मनोरंजन से भरपूर इस मेले में सहभागिता करें।"
                   : "Experience joy, faith, and entertainment with your family at this grand mela."}
               </p>
             </div>
@@ -63,7 +71,7 @@ const ContactSection = () => {
           </motion.div>
 
           {/* RIGHT: THE MINIMAL FORM */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             className="lg:col-span-7 bg-white p-10 md:p-16 rounded-[3rem] border border-slate-100 shadow-xl shadow-slate-200/40"
@@ -99,12 +107,19 @@ const ContactSection = () => {
             {/* Social Icons Footer */}
             <div className="mt-12 pt-8 border-t border-slate-50 flex flex-wrap justify-between items-center gap-6">
               <div className="flex gap-4">
-                {[Facebook, Twitter, Instagram].map((Icon, i) => (
-                  <a key={i} href="#" className="h-10 w-10 flex items-center justify-center rounded-xl bg-slate-50 text-slate-400 hover:bg-primary hover:text-white transition-all">
-                    <Icon size={18} />
+                {socials.map((social, i) => (
+                  <a
+                    key={i}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`h-10 w-10 flex items-center justify-center rounded-xl bg-slate-50 text-slate-400 ${social.color} hover:text-white transition-all`}
+                  >
+                    <social.icon size={18} />
                   </a>
                 ))}
               </div>
+
               <a href="mailto:mahanagarmela@gmail.com" className="flex items-center gap-2 text-sm font-bold text-slate-400 hover:text-slate-900 transition-colors">
                 <Mail size={16} /> mahanagarmela@gmail.com
               </a>

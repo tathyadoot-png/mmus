@@ -121,7 +121,7 @@ const Footer = ({ lang }: { lang: Lang }) => {
             <span className="w-1.5 h-1.5 rounded-full bg-orange-500" />
             <span className="w-1.5 h-1.5 rounded-full bg-green-600" />
           </div>
-          <p className="text-[9px] font-black text-slate-300 uppercase tracking-[0.5em]">
+          <p className="text-[11px] font-black text-slate-400 uppercase tracking-[0.5em]">
            शिक्षा • संस्कृति • रोज़गार
           </p>
         </div>
