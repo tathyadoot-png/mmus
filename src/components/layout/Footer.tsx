@@ -122,7 +122,7 @@ const Footer = ({ lang }: { lang: Lang }) => {
             <span className="w-1.5 h-1.5 rounded-full bg-green-600" />
           </div>
           <p className="text-[9px] font-black text-slate-300 uppercase tracking-[0.5em]">
-            Sanskriti • Samarpan • Sangam
+           शिक्षा • संस्कृति • रोज़गार
           </p>
         </div>
       </div>

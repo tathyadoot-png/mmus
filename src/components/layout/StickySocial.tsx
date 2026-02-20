@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 
 const StickySocial = () => {
   const socials = [
-    { icon: Facebook, href: "https://www.facebook.com/share/17G8ZiAHdx/", color: "text-[#1877F2]" },
-    { icon: Instagram, href: "https://www.instagram.com/officeofgs", color: "text-[#E4405F]" },
-    { icon: FaXTwitter, href: "#", color: "text-black" }, // X (Twitter) का नया लोगो और ब्लैक कलर
-    { icon: Youtube, href: "#", color: "text-[#FF0000]" },
+    { icon: Facebook, href: "https://www.facebook.com/mahanagarmela", color: "text-[#1877F2]" },
+    { icon: Instagram, href: "https://www.instagram.com/mahanagarmela", color: "text-[#E4405F]" },
+    { icon: FaXTwitter, href: " https://x.com/mahanagarmela", color: "text-black" }, // X (Twitter) का नया लोगो और ब्लैक कलर
+    { icon: Youtube, href: "https://youtube.com/@mahanagarmela", color: "text-[#FF0000]" },
     // { icon: FaWhatsapp, href: "https://whatsapp.com/channel/0029VaC2vxOI7BeLB9xjC43u", color: "text-[#25D366]" },
   ];
 

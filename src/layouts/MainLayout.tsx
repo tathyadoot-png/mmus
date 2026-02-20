@@ -110,7 +110,7 @@ const MainLayout = () => {
                   className="flex items-center justify-center gap-3 text-[var(--mela-green)] font-bold text-[10px] md:text-sm uppercase"
                 >
                   <span className="h-[1px] w-8 bg-[var(--mela-green)] opacity-30" />
-                  संस्कृति • समर्पण • संगम
+                  शिक्षा • संस्कृति • रोज़गार
                   <span className="h-[1px] w-8 bg-[var(--mela-green)] opacity-30" />
                 </motion.div>
               </div>

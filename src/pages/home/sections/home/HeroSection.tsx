@@ -62,8 +62,8 @@ const HeroSection = ({ lang = "hi" }: { lang?: "hi" | "en" }) => {
           animate={{ opacity: 1 }}
           className="max-w-4xl"
         >
-          <h2 className="text-[#f48220] font-bold text-xs md:text-2xl italic mb-1 md:mb-6 tracking-wide">
-            {isHi ? "संस्कृति • समर्पण • संगम" : "Culture • Unity"}
+          <h2 className="text-[#f48220] font-bold text-xs md:text-2xl italic mb-1 md:mb-8 tracking-wide">
+            {isHi ? "शिक्षा • संस्कृति • रोज़गार" : "Education • Culture • Employment"}
           </h2>
           
           <h1 className="text-white text-[clamp(2rem,11vw,6rem)] font-[1000] uppercase leading-[1.05] md:leading-[0.9] tracking-tighter">
