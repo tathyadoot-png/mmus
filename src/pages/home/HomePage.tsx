@@ -32,11 +32,11 @@ const HomePage = () => {
       <section id="cultural">
         <CulturalSection lang={lang} />
       </section>
-
-      {/* <section id="leadership">
-  <LeadershipSection lang={lang} />
+ <section id="leadership">
+  <GallerySection lang={lang} />
 </section>
 
+      {/*
 <section id="media">
   <GallerySection  />
 </section> */}
