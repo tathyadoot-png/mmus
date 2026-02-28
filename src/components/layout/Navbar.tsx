@@ -39,7 +39,7 @@ const Navbar = ({ lang, setLang }: NavbarProps) => {
     { label: lang === "hi" ? "विशेषताएँ" : "Highlights", href: "#features", icon: <Sparkles size={18} /> },
     { label: lang === "hi" ? "सांस्कृतिक" : "Cultural", href: "#cultural", icon: <Calendar size={18} /> },
     // { label: lang === "hi" ? "संरक्षक" : "Patrons", href: "#patrons", icon: <Users size={18} /> },
-    // { label: lang === "hi" ? "गैलरी" : "Gallery", href: "#gallery", icon: <Image size={18} /> },
+    { label: lang === "hi" ? "गैलरी" : "Gallery", href: "#gallery", icon: <Image size={18} /> },
   ];
 
   useLayoutEffect(() => {
